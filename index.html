@@ -21,7 +21,16 @@ font-family: Arial, sans-serif;
 background: #f4f4f4;
 color: #333;
 }
-
+.container {
+max-width: 800px;
+margin: 0 auto; /* центрирование на больших экранах */
+padding: 20px; /* отступы внутри, чтобы границы не касались контента */
+display: flex;
+flex-direction: column;
+gap: 20px;
+border-left: 5px solid #333; /* левая граница */
+border-right: 5px solid #333; /* правая граница */
+}
 /* Шпка */
 header {
 background: #fff;
