@@ -24,339 +24,338 @@ body {
 
 /* Шпка */
 header {
-background: #fff;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-padding: 12px 20px;
-position: sticky;
-top: 0;
-z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
-.header-content {
-max-width: 1000px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
-gap: 15px;
+  .header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
 }
-.logo-text-group {
-display: flex;
-align-items: center;
-gap: 15px;
-flex: 1;
-}
-.logo-img {
-height: 64px;
-width: auto;
-border-radius: 6px;
-}
-.title-block h1 {
-margin: 0;
-font-size: 1.3rem;
-line-height: 1.2;
-}
-.title-block .subtitle {
-margin: 4px 0 0;
-font-size: 0.9rem;
-color: #666;
-}
-.header-btn {
-display: inline-block;
-padding: 10px 22px;
-background: #e74c3c;
-color: #fff;
-text-decoration: none;
-border-radius: 6px;
-font-weight: bold;
-white-space: nowrap;
-transition: background 0.2s;
-}
-.header-btn:hover {
-background: #c0392b;
-}
+  .logo-text-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+  }
+  .logo-img {
+    height: 64px;
+    width: auto;
+    border-radius: 6px;
+  }
+  .title-block h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+  .title-block .subtitle {
+    margin: 4px 0 0;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .header-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+  .header-btn:hover {
+    background: #c0392b;
+  }
 
-/* Основной контейнер */
-.container {
-max-width: 800px;
-margin: 0 auto; /* центрирование на больших экранах */
-padding: 20px; /* отступы внутри, чтобы границы не касались контента */
-display: flex;
-flex-direction: column;
-gap: 20px;
-border-left: 5px solid #333; /* левая граница */
-border-right: 5px solid #333; /* правая граница */
-}
+  /* Основной контейнер */
+  .container {
+    max-width: 800px;
+    margin: 0 auto; /* центрирование на больших экранах */
+    padding: 20px; /* отступы внутри, чтобы границы не касались контента */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 5px solid #333; /* левая граница */
+    border-right: 5px solid #333; /* правая граница */
+  }
 
-.video-wrapper {
-position: relative;
-width: 100%;
-aspect-ratio: 16 / 9;
-background-color: #000;
-margin: 20px 0;
-border-radius: 8px;
-overflow: hidden;
-}
-.video-wrapper iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-.description-text {
-margin: 20px 0;
-line-height: 1.6;
-}
+  .description-text {
+    margin: 20px 0;
+    line-height: 1.6;
+  }
 
-.screenshots-gallery {
-display: flex;
-flex-direction: column;
-gap: 20px;
-}
-.screenshot-item img {
-display: block;
-width: 100%;
-height: auto;
-border-radius: 8px;
-}
-.screenshot-caption {
-font-size: 0.9em;
-color: #555;
-margin-top: 5px;
-}
+  .screenshots-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .screenshot-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .screenshot-caption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+  }
 
-.instruction {
-margin: 30px 0;
-background: #fff;
-padding: 20px;
-border-radius: 8px;
-}
-.steps {
-display: flex;
-flex-direction: column;
-gap: 10px;
-}
-.step {
-display: flex;
-align-items: baseline;
-gap: 10px;
-}
-.step-number {
-background: #0077cc;
-color: #fff;
-width: 24px;
-height: 24px;
-border-radius: 50%;
-display: inline-flex;
-align-items: center;
-justify-content: center;
-font-weight: bold;
-flex-shrink: 0;
-}
-.vote-links {
-margin: 20px 0;
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-}
-.btn {
-display: inline-block;
-padding: 12px 24px;
-background: #eee;
-color: #333;
-text-decoration: none;
-border-radius: 6px;
-font-weight: bold;
-}
-.btn.primary {
-background: #0077cc;
-color: #fff;
-}
+  .instruction {
+    margin: 30px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .step {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .step-number {
+    background: #0077cc;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
+  .vote-links {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #eee;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  .btn.primary {
+    background: #0077cc;
+    color: #fff;
+  }
 
-/* Подвал (footer) */
-.site-footer {
-background: #2c3e50;
-color: #ecf0f1;
-padding: 30px 20px;
-margin-top: 40px;
-font-size: 0.95rem;
-}
-.footer-content {
-max-width: 1000px;
-margin: 0 auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items: center;
-gap: 20px;
-}
-.footer-left {
-flex: 1;
-min-width: 200px;
-}
-.footer-left p {
-margin: 5px 0;
-}
-.footer-right {
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-gap: 10px;
-}
-.social-links {
-display: flex;
-gap: 15px;
-}
-.social-links a {
-color: #ecf0f1;
-font-size: 1.6rem;
-transition: color 0.2s;
-}
-.social-links a:hover {
-color: #e74c3c;
-}
-.footer-email a {
-color: #ecf0f1;
-text-decoration: underline;
-}
-.footer-disclaimer {
-max-width: 1000px;
-margin: 20px auto 0;
-border-top: 1px solid #7f8c8d;
-padding-top: 15px;
-text-align: center;
-font-size: 0.85rem;
-opacity: 0.85;
-}
+  /* Подвал (footer) */
+  .site-footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+  }
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-left {
+    flex: 1;
+    min-width: 200px;
+  }
+  .footer-left p {
+    margin: 5px 0;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  .social-links a {
+    color: #ecf0f1;
+    font-size: 1.6rem;
+    transition: color 0.2s;
+  }
+  .social-links a:hover {
+    color: #e74c3c;
+  }
+  .footer-email a {
+    color: #ecf0f1;
+    text-decoration: underline;
+  }
+  .footer-disclaimer {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
 
-/* Адаптивность */
-@media (max-width: 600px) {
-.header-content {
-flex-direction: column;
-align-items: flex-start;
-}
-.logo-text-group {
-width: 100%;
-}
-.logo-img {
-height: 48px;
-}
-.title-block h1 {
-font-size: 1.1rem;
-}
-}
-@media (max-width: 480px) {
-.vote-links .btn {
-flex: 1 1 100%;
-text-align: center;
-}
-}
+  /* Адаптивность */
+  @media (max-width: 600px) {
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo-text-group {
+      width: 100%;
+    }
+    .logo-img {
+      height: 48px;
+    }
+    .title-block h1 {
+      font-size: 1.1rem;
+    }
+  }
+  @media (max-width: 480px) {
+    .vote-links .btn {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
 </style>
 </head>
 <body>
+  <!-- Шапка -->
+  <header>
+    <div class="header-content">
+      <div class="logo-text-group">
+        <img src="https://imgfy.ru/ib/8JFVMDiCoLLGcAi_1781686218.webp"
+          alt="Логотип Tale of the Larva"
+          class="logo-img"
+          loading="lazy">
+        <div class="title-block">
+          <h1>Tale of the Larva</h1>
+          <p class="subtitle">Новая Игра + Ykt — Конкурс</p>
+        </div>
+      </div>
 
-<!-- Шапка -->
-<header>
-<div class="header-content">
-<div class="logo-text-group">
-<img src="https://imgfy.ru/ib/8JFVMDiCoLLGcAi_1781686218.webp"
-alt="Логотип Tale of the Larva"
-class="logo-img"
-loading="lazy">
-<div class="title-block">
-<h1>Tale of the Larva</h1>
-<p class="subtitle">Новая Игра + Ykt — Конкурс</p>
-</div>
-</div>
+      <div class="vote-links">
+        <a href="ruk.html" target="_blank" rel="noopener" style="display: inline-block; background-color: #0066cc; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-family: sans-serif;">Сайт голосования</a>
 
-<div class="vote-links">
-<a href="ruk.html" target="_blank" rel="noopener" style="display: inline-block; background-color: #0066cc; color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-family: sans-serif;">Сайт голосования</a>
-
-</div>
-</header>
-<div class="video-wrapper">
-<iframe src="https://rutube.ru/play/embed/11b86de09fcc9d5098b29cc8f88437db/?p=jFPTUS6Hj_PK-H5xvbS6EA"></iframe>
-</div>
-
-</div>
-
-<!-- Описание -->
-<div class="description-text">
-<p>
-<strong>«Tale of the Larva»</strong> — это увлекательное приключение, в котором вы играете за жука по имени Ларва.
-Ваша цель — освободить долину от нашествия лягушек, преодолевая препятствия
-и сражаясь с врагами на своём пути. Игра сочетает в себе элементы платформера
-и экшена с уникальной рисованной графикой.
-</p>
-<p>
-Проект участвует в конкурсе <strong>«Новая Игра + Ykt»</strong> и нуждается
-в вашей поддержке! Проголосуйте за нас, чтобы игра увидела свет.
-</p>
-</div>
-
-<!-- Галерея скриншотов -->
-<div class="screenshots-gallery">
-<div class="screenshot-item">
-<img src="https://imgfy.ru/ib/KstQfvkwkCjFjdB_1783495860.webp"
-alt="Скриншот геймплея — босс"
-loading="lazy">
-
-В локациях вы можете встретить противников в виде мечников и лучников, также в подземной локации обитают монстры, через которых нужно будет пройти. А в конце вас ждёт босс, к которому без должной подготовки лучше не соваться.
-
-<div class="screenshots-gallery">
-<div class="screenshot-item">
-<img src="https://imgfy.ru/ib/f4J78dv8BvUIj1F_1781687362.webp"
-alt="Скриншот геймплея — долина"
-loading="lazy">
-
-Боевая система завязана на чёткое управление мышью. Каждый клик запускает одиночный взмах мечом, но если наносить удары без пауз, персонаж автоматически выполняет серию атак. Чем длиннее серия, тем выше финальный урон, однако в любой момент можно прервать комбо, чтобы уйти в блок. Также есть рывок которую можно использовать для атаки так и для уклонения.
-Для дальнего боя служат свитки с заклинаниями. Они работают как расходуемые предметы: игрок выбирает свиток на панели быстрого доступа, прицеливается и выбрасывает огненный, электрический или отравленный свиток. Свитки можно, покупать у кузнеца.
-</div>
-<div class="screenshot-item">
-<img src="https://imgfy.ru/ib/qe63sjnYih2DeSk_1781687470.webp"
-alt="Скриншот геймплея — битва с лягушкой"
-loading="lazy">
-В игре есть отдельная зона — кузница, где кузнец берёт на себя роль торговца и ремесленника. У него можно:купить готовую броню и модификации для меча разных типов;починить повреждённые снаряжения;модификация меча — можно заменить лезвие, рукоять, гарду и тыльник.Также детали для модификаций можно найти — их нужно искать самому. Принеся набор деталей кузнецу, можно либо улучшить текущий меч
+      </div>
+  </header>
+  <div class="video-wrapper">
+    <iframe src="https://rutube.ru/play/embed/11b86de09fcc9d5098b29cc8f88437db/?p=jFPTUS6Hj_PK-H5xvbS6EA"></iframe>
+  </div>
 
 </div>
-</div>
 
-<!-- Инструкция по голосованию -->
-<div class="instruction" id="vote-section">
-<h2>📋 Как поддержать игру</h2>
-<div class="steps">
-<div class="step">
-<span class="step-number"></span>
-<span>Нажмите кнопку ниже, чтобы перейти на сайт голосования.</span>
-</div>
-</div>
-<div class="vote-links">
-<a href="ruk.html">Сайт голосования</a>
+  <!-- Описание -->
+  <div class="description-text">
+    <p>
+      <strong>«Tale of the Larva»</strong> — это увлекательное приключение, в котором вы играете за жука по имени Ларва.
+      Ваша цель — освободить долину от нашествия лягушек, преодолевая препятствия
+      и сражаясь с врагами на своём пути. Игра сочетает в себе элементы платформера
+      и экшена с уникальной рисованной графикой.
+    </p>
+    <p>
+      Проект участвует в конкурсе <strong>«Новая Игра + Ykt»</strong> и нуждается
+      в вашей поддержке! Проголосуйте за нас, чтобы игра увидела свет.
+    </p>
+  </div>
 
-</a>
-</div>
-</div>
-</div>
+  <!-- Галерея скриншотов -->
+  <div class="screenshots-gallery">
+    <div class="screenshot-item">
+      <img src="https://imgfy.ru/ib/KstQfvkwkCjFjdB_1783495860.webp"
+        alt="Скриншот геймплея — босс"
+        loading="lazy">
 
-<!-- Подвал -->
-<footer class="site-footer">
-<div class="footer-content">
-<div class="footer-left">
-<p><strong>Tale of the Larva</strong> — Новая Игра + Ykt</p>
-<p>Свяжитесь с нами в социальных сетях:</p>
-</div>
+      В локациях вы можете встретить противников в виде мечников и лучников, также в подземной локации обитают монстры, через которых нужно будет пройти. А в конце вас ждёт босс, к которому без должной подготовки лучше не соваться.
 
+      <div class="screenshots-gallery">
+        <div class="screenshot-item">
+          <img src="https://imgfy.ru/ib/f4J78dv8BvUIj1F_1781687362.webp"
+            alt="Скриншот геймплея — долина"
+            loading="lazy">
+
+          Боевая система завязана на чёткое управление мышью. Каждый клик запускает одиночный взмах мечом, но если наносить удары без пауз, персонаж автоматически выполняет серию атак. Чем длиннее серия, тем выше финальный урон, однако в любой момент можно прервать комбо, чтобы уйти в блок. Также есть рывок которую можно использовать для атаки так и для уклонения.
+          Для дальнего боя служат свитки с заклинаниями. Они работают как расходуемые предметы: игрок выбирает свиток на панели быстрого доступа, прицеливается и выбрасывает огненный, электрический или отравленный свиток. Свитки можно, покупать у кузнеца.
+        </div>
+        <div class="screenshot-item">
+          <img src="https://imgfy.ru/ib/qe63sjnYih2DeSk_1781687470.webp"
+            alt="Скриншот геймплея — битва с лягушкой"
+            loading="lazy">
+          В игре есть отдельная зона — кузница, где кузнец берёт на себя роль торговца и ремесленника. У него можно:купить готовую броню и модификации для меча разных типов;починить повреждённые снаряжения;модификация меча — можно заменить лезвие, рукоять, гарду и тыльник.Также детали для модификаций можно найти — их нужно искать самому. Принеся набор деталей кузнецу, можно либо улучшить текущий меч
+
+        </div>
+      </div>
+
+      <!-- Инструкция по голосованию -->
+      <div class="instruction" id="vote-section">
+        <h2>📋 Как поддержать игру</h2>
+        <div class="steps">
+          <div class="step">
+            <span class="step-number"></span>
+            <span>Нажмите кнопку ниже, чтобы перейти на сайт голосования.</span>
+          </div>
+        </div>
+        <div class="vote-links">
+          <a href="ruk.html">Сайт голосования</a>
+
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong>Tale of the Larva</strong> — Новая Игра + Ykt</p>
+          <p>Свяжитесь с нами в социальных сетях:</p>
+        </div>
+
+      </div>
+      <div class="footer-email">
+        📧 <a href="mailto:hello@taleofthelarva.game">hello@taleofthelarva.game</a>
+      </div>
+  </div>
 </div>
-<div class="footer-email">
-📧 <a href="mailto:hello@taleofthelarva.game">hello@taleofthelarva.game</a>
-</div>
-</div>
-</div>
-<div class="footer-disclaimer">
-© 2024 Tale of the Larva. Все права защищены. Конкурс «Новая Игра + Ykt».
-</div>
+  <div class="footer-disclaimer">
+    © 2024 Tale of the Larva. Все права защищены. Конкурс «Новая Игра + Ykt».
+  </div>
 </footer>
 
 </body>
